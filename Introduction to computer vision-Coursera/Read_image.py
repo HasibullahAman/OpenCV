@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import ImageOps
 from PIL import Image
-images = Image.open('../images/cat.png')
+images = Image.open('../images/baboon.png')
 # images.show(images)
 
 # convert the image to grayscale
@@ -20,4 +20,11 @@ new_image_cat = Image.open('./new_cat.png')
 
 # quantize image
 new_image_cat = new_image_cat.quantize(22)
-new_image_cat.show()
+# new_image_cat.show()
+
+
+# split the image to red,green and blue
+# images.show()
+Red, Green , Blue = images.split()
+
+Green.show()
