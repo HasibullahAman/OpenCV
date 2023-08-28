@@ -17,4 +17,7 @@ image_to_gray.save('new_cat.png')
 
 # Read the save image
 new_image_cat = Image.open('./new_cat.png')
+
+# quantize image
+new_image_cat = new_image_cat.quantize(22)
 new_image_cat.show()
