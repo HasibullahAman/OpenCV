@@ -27,4 +27,7 @@ new_image_cat = new_image_cat.quantize(22)
 # images.show()
 Red, Green , Blue = images.split()
 
-Green.show()
+# Green.show()
+
+images_array = np.array(images)
+print(images_array)
