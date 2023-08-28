@@ -6,4 +6,8 @@ images = Image.open('../images/cat.png')
 
 # convert the image to grayscale
 image_to_gray =ImageOps.grayscale(images)
-image_to_gray.show()
+# image_to_gray.show()
+print(image_to_gray.mode)
+print(image_to_gray.format)
+print(image_to_gray.width)
+print(image_to_gray.height)
