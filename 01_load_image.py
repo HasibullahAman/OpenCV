@@ -1,6 +1,5 @@
-import numpy as np
-# how basic we read image
 import cv2 as cv
-img = cv.imread('images\cat.png')
-cv.imshow('cat', img)
+
+img = cv.imread('.\images/baboon.png')
+cv.imshow('Cat', img)
 cv.waitKey(0)
