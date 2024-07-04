@@ -14,11 +14,11 @@ def rescaleFrame(frame,scale = 0.75):
 
 
 # read image
-# frame = cv.imread("images/cat.png")
-# resize_frame = rescaleFrame(frame) # we resize the image here
-# cv.imshow("cat",resize_frame)
-# cv.imshow("same_cat",frame)
-# cv.waitKey(0 )
+frame = cv.imread("images/cat.png")
+resize_frame = rescaleFrame(frame) # we resize the image here
+cv.imshow("cat",resize_frame)
+cv.imshow("same_cat",frame)
+cv.waitKey(0 )
 
 
 
