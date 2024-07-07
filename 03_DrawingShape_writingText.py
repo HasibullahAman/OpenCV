@@ -17,8 +17,13 @@ cv.imshow('shape', blanks)
 
 
 # Red
-blanks[:] = 0,0,255
-cv.imshow('Green', blanks)
+# blanks[:] = 0,0,255
+# cv.imshow('Green', blanks)
+
+
+# if I want half of the image
+blanks[200:300, 200:300] = 0,0,255
+cv.imshow("halfRed", blanks)
 
 
 cv.waitKey(10000)
