@@ -1,8 +1,5 @@
 import cv2 as cv
 
-
-
-
 def rescaleFrame(frame,scale = 0.75):
     width = int(frame.shape[1] * scale) # frame.shape[1] ==> width of image
     height = int(frame.shape[0] * scale) # frame.shape[0] ==> height of image
@@ -10,6 +7,11 @@ def rescaleFrame(frame,scale = 0.75):
     dimenations = (width,height)
     
     return cv.resize(frame,dimenations, interpolation = cv.INTER_AREA)
+
+
+def ChangeResolution(width,height): # just work for streem videos
+    video.set(3,width)
+    video.set(4,height)
 
 
 
