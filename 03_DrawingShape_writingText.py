@@ -42,6 +42,6 @@ cv.imshow('shape', blanks)
 
 
 # put text
-cv.putText(blanks,"HI This is Hasibullah Aman",(100,255),cv.FONT_HERSHEY_PLAIN,1.0,(0,255),thickness=1)
-cv.imshow("text",blanks)
+# cv.putText(blanks,"HI This is Hasibullah Aman",(100,255),cv.FONT_HERSHEY_PLAIN,1.0,(0,255),thickness=1)
+# cv.imshow("text",blanks)
 cv.waitKey(10000)
