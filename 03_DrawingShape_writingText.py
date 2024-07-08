@@ -22,8 +22,19 @@ cv.imshow('shape', blanks)
 
 
 # if I want half of the image
-blanks[200:300, 200:300] = 0,0,255
-cv.imshow("halfRed", blanks)
+# blanks[200:300, 200:300] = 0,0,255
+# cv.imshow("halfRed", blanks)
+
+
+# Drawing rectangle
+# cv.rectangle(blanks,(0,0),(255,255),(0,255,255),thickness=-1)
+# cv.imshow("rectangle", blanks)
+
+# Drawing Circle
+cv.circle(blanks,(255,255),100,(0,0,255),thickness=3)
+cv.imshow("circle",blanks)
+# Drawing Line
+
 
 
 cv.waitKey(10000)
