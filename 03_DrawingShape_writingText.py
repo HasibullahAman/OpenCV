@@ -30,11 +30,15 @@ cv.imshow('shape', blanks)
 # cv.rectangle(blanks,(0,0),(255,255),(0,255,255),thickness=-1)
 # cv.imshow("rectangle", blanks)
 
-# Drawing Circle
-cv.circle(blanks,(255,255),100,(0,0,255),thickness=3)
-cv.imshow("circle",blanks)
+# # Drawing Circle
+# cv.circle(blanks,(255,255),100,(0,0,255),thickness=3)
+# cv.line(blanks,(100,100),(300,300),(0,0,255),thickness=1)
+# cv.imshow("circle",blanks)
+
 # Drawing Line
 
+cv.line(blanks,(100,100),(300,300),(0,0,255),thickness=1)
+cv.imshow("line",blanks)
 
 
 cv.waitKey(10000)
