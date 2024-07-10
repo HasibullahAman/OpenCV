@@ -10,4 +10,10 @@ def rescaleFunction(frame,scale):
 changeFrame = rescaleFunction(img,0.75)
 cv.imshow("changeFrame",changeFrame)
 
+# change JPG image to Grayscale format
+Gray = cv.cvtColor(changeFrame,cv.COLOR_RGB2GRAY)
+cv.imshow("grayImage",Gray)
+
+
+
 cv.waitKey(20000)
