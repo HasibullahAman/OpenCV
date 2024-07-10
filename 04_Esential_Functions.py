@@ -15,5 +15,10 @@ Gray = cv.cvtColor(changeFrame,cv.COLOR_RGB2GRAY)
 cv.imshow("grayImage",Gray)
 
 
+# Blur image
+
+blur = cv.GaussianBlur(changeFrame,(7,7),cv.BORDER_DEFAULT)
+cv.imshow("blurImage",blur)
+
 
 cv.waitKey(20000)
