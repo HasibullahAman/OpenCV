@@ -30,6 +30,16 @@ dilated = cv.dilate(canny,(7,7),iterations = 3)
 cv.imshow("dilated",dilated)
 
 
+# Eroded image
+
+eroded = cv.erode(dilated,(7,7),iterations = 3)
+cv.imshow("eroded",eroded)
+
+
+# Resize the image
+resized = cv.resize(img,(250,250))
+cv.imshow("resizedImage",resized)
+
 
 
 
