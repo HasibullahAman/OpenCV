@@ -25,4 +25,13 @@ canny = cv.Canny(changeFrame,125,175)
 cv.imshow("cannyImage",canny)
 
 
+# Dilating the image
+dilated = cv.dilate(canny,(7,7),iterations = 3)
+cv.imshow("dilated",dilated)
+
+
+
+
+
+
 cv.waitKey(20000)
