@@ -21,7 +21,8 @@ blur = cv.GaussianBlur(changeFrame,(7,7),cv.BORDER_DEFAULT)
 cv.imshow("blurImage",blur)
 
 # Edge Cascade
-
 canny = cv.Canny(changeFrame,125,175)
 cv.imshow("cannyImage",canny)
+
+
 cv.waitKey(20000)
